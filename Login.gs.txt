@@ -1,0 +1,14 @@
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  // For simplicity, hardcoding a valid login
+  if (username === 'friend' && password === 'password123') {
+    // Redirect to login.html upon successful login
+    window.location.href = 'login.html';
+  } else {
+    alert('Invalid login credentials');
+  }
+});
